@@ -1,12 +1,11 @@
 package edu.westga.cs.schoolgrades;
 
 import java.net.URL;
-
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.Parent;
+import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
+import javafx.application.Application;
 
 /**
  * Main class for the Babble project
@@ -17,8 +16,9 @@ import javafx.stage.Stage;
 public class Main extends Application {
 
 	private static final String GUI_RESOURCE = "edu/westga/cs/schoolgrades/views/GradesGui.fxml";
+	
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(final Stage primaryStage) throws Exception {
 //        ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
 //        URL resource = classLoader.getResource(Main.GUI_RESOURCE);
 //        FXMLLoader loader = new FXMLLoader(resource);
@@ -30,11 +30,11 @@ public class Main extends Application {
     }
 
     /**
-     * Start point for the appliction.
+     * Start point for the application.
      * 
      * @param args not used
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         launch(args);
     }
 
