@@ -9,8 +9,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 /**
- * Main class for the Babble project
- * 
+ * Main class for the Babble project * 
  * @author lewisb, starter file from Dr. B
  * @version cs6241
  */
