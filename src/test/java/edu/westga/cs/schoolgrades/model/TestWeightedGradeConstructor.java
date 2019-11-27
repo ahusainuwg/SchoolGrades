@@ -27,4 +27,10 @@ public class TestWeightedGradeConstructor {
 			new WeightedGrade(mock(Grade.class), 10.0);
 		});
 	}
+	
+	@Test
+	public void shouldAllowCorrectWeight() {
+		WeightedGrade weightedGrade = new WeightedGrade(mock(Grade.class), 1.0);
+		assertEquals(0, weightedGrade.getValue(), 1.0);
+	}
 }
