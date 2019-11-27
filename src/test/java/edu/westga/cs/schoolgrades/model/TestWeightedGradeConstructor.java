@@ -22,8 +22,9 @@ public class TestWeightedGradeConstructor {
 	
 	@Test
 	public void shouldNotAllowWeightGreaterThanOne() {
+		System.out.println("running test with mock");
 		assertThrows(IllegalArgumentException.class, () ->{ 
-			new WeightedGrade(new SimpleGrade(50), 10.0);
+			new WeightedGrade(mock(Grade.class), 10.0);
 		});
 	}
 }
