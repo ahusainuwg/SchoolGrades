@@ -1,11 +1,12 @@
 package edu.westga.cs.schoolgrades.model;
 
-import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.BeforeEach;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.mockito.Mockito.mock;
 import org.junit.jupiter.api.Test;
 
 public class TestWeightedGradeConstructor {
-
+	
 	@Test
 	public void shouldNotAllowNullGrade() {
 		assertThrows(IllegalArgumentException.class, () ->{ 
@@ -32,5 +33,6 @@ public class TestWeightedGradeConstructor {
 	public void shouldAllowCorrectWeight() {
 		WeightedGrade weightedGrade = new WeightedGrade(mock(Grade.class), 1.0);
 		assertEquals(0, weightedGrade.getValue(), 1.0);
+	
 	}
 }
