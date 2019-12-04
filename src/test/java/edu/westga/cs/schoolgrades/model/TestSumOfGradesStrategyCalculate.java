@@ -40,7 +40,7 @@ public class TestSumOfGradesStrategyCalculate {
 	
 	@Test
 	public  void shouldNotAllowNullGradesList() {
-		assertThrows(IllegalArgumentException.class, () ->{ 
+		assertThrows(IllegalArgumentException.class, ()->{ 
 			strategy.calculate(null);
 		});
 	}
