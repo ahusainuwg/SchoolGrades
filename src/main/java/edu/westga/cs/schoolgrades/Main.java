@@ -27,6 +27,7 @@ public class Main extends Application {
 //        primaryStage.setTitle("Grades Worksheet");
 //        primaryStage.show();
     }
+    
 
     /**
      * Start point for the appliction.
