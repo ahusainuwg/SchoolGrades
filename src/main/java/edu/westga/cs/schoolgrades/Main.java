@@ -16,17 +16,20 @@ import javafx.stage.Stage;
  */
 public class Main extends Application {
 
-	private static final String GUI_RESOURCE = "edu/westga/cs/schoolgrades/views/GradesGui.fxml";
+private static final String GUI_RESOURCE = "edu/westga/cs/schoolgrades/views/GradesGui.fxml";
+	
     @Override
     public void start(Stage primaryStage) throws Exception {
-//        ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
-//        URL resource = classLoader.getResource(Main.GUI_RESOURCE);
-//        FXMLLoader loader = new FXMLLoader(resource);
-//        Parent root = (Parent) loader.load();
-//        Scene scene = new Scene(root);
-//        primaryStage.setScene(scene);
-//        primaryStage.setTitle("Grades Worksheet");
-//        primaryStage.show();
+    	final ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+        final URL resource = classLoader.getResource(GUI_RESOURCE);
+        System.out.println(resource);
+       
+        final FXMLLoader loader = new FXMLLoader(resource);
+        final Parent root = (Parent)loader.load();
+        final Scene scene = new Scene(root);
+        primaryStage.setScene(scene);
+        primaryStage.setTitle("Grades Worksheet");
+        primaryStage.show();
     }
 
     /**
